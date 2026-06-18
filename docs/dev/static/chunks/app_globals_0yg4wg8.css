@@ -1,0 +1,102 @@
+/* [project]/app/globals.css [app-client] (css) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #000;
+  background: #fff;
+  font-family: DM Sans, sans-serif;
+}
+
+.page {
+  opacity: 0;
+  transition: opacity .4s;
+  display: none;
+}
+
+.page.active {
+  opacity: 1;
+  display: block;
+}
+
+.cat-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.cat-card img {
+  transition: transform .6s;
+}
+
+.cat-card:hover img {
+  transform: scale(1.05);
+}
+
+.cat-overlay {
+  opacity: 0;
+  background: #0006;
+  justify-content: center;
+  align-items: center;
+  transition: opacity .4s;
+  display: flex;
+  position: absolute;
+  inset: 0;
+}
+
+.cat-card:hover .cat-overlay {
+  opacity: 1;
+}
+
+.lightbox {
+  z-index: 100;
+  cursor: pointer;
+  background: #000000f2;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: fixed;
+  inset: 0;
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+.lightbox img {
+  object-fit: contain;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.gallery-img {
+  cursor: pointer;
+  transition: opacity .3s;
+}
+
+.gallery-img:hover {
+  opacity: .8;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link:after {
+  content: "";
+  background: #000;
+  width: 0;
+  height: 1px;
+  transition: width .3s;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+.nav-link:hover:after {
+  width: 100%;
+}
+
+/*# sourceMappingURL=app_globals_0yg4wg8.css.map*/

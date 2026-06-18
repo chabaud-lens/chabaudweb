@@ -1,7 +1,6 @@
 const nextConfig = {
   reactStrictMode: true,
-  basePath: '/chabaudweb',
-  assetPrefix: '/chabaudweb',
+  assetPrefix: './',
   trailingSlash: true,
   output: 'export',
   distDir: 'docs',

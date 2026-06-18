@@ -3,7 +3,7 @@ import { MailIcon, WhatsAppIcon, InstagramIcon, TikTokIcon } from './BrandIcons'
 
 export default function BrandLogo({ name, className = 'w-5 h-5', alt = '', ...props }) {
   const [failed, setFailed] = useState(false);
-  const src = `/icons/${name}.svg`;
+  const src = `./icons/${name}.svg`;
 
   if (failed) {
     // fallback to inline SVGs from BrandIcons
